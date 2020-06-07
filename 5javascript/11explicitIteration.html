@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	var webCategories = ["Frontend devloper", "Backend devloper", "Fullstack developer"];
+
+	/* explicit iteration */
+	var uppercaseCategories = [];
+	for (var i=0; i<webCategories.length; i++) {
+		uppercaseCategories.push(webCategories[i].toUpperCase());
+	}
+	console.log(uppercaseCategories);
+
+	// create a gap in the array
+	webCategories[4] = "last element";
+	var uppercaseCategories = [];
+	for (var i=0; i<webCategories.length; i++) {
+		var value = webCategories[i];
+		if (value !== undefined) {
+			if (value.indexOf("Back") === 0) {
+				break;
+			}
+			uppercaseCategories.push(value.toUpperCase());
+		}
+	}
+	console.log(uppercaseCategories);
+
+
+</script>
+
+</body>
+</html>
