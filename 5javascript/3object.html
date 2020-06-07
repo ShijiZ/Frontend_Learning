@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	var user = {
+		login: "",
+		password: "",
+		firstName: "",
+		lastName: "",
+
+		getFullName: function() {
+			return this.firstName + " " + this.lastName;
+		}
+	};
+
+	user.firstName = "Shiji";
+	user.lastName = "Zhao";
+
+	console.log(user.getFullName());
+
+</script>
+
+</body>
+</html>

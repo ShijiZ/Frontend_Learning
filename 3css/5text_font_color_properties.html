@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  
+  <!-- This css file will clear all format -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  
+  <style>
+    body {
+      /**
+      font-family
+        specifies the font name; can be a comma separated list of names; 
+        values: 
+          single, font, name
+        multiple font names separated by comma, from the most to the least specific 
+      **/
+      font-family: Georgia, Arial, sans-serif;
+      
+      /**
+      line-height
+        values:
+          inherit, normal, [value], [percentage]
+      **/
+      line-height: 1.2;
+
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-align: justify;
+
+      /**
+      font-size
+        specify the size of a font. 
+        values:
+          inherit, xx-small, x-small, small, large, x-large, xx-large, smaller, arger, [length], [percentage]
+      **/
+      font-size: 1em;
+
+      /**
+      background
+        values:
+          color, url, repeat, position
+      **/
+      background: transparent url(http://www.designbolts.com/wp-content/uploads/2013/02/Diamond-Grey-Seamless-Pattern-For-Website-Background.jpg) repeat left top;   
+    }      
+    
+    h1,h2,h3,h4,h5,h6 {
+      /**
+      font-weight:
+        values:
+          inherit, normal, bold, lighter
+          100 - 400  = normal
+          500 - 700  = bold
+          800 - 900  = extra bold (not supported from all browsers)
+      **/
+      font-weight: bold;      
+      line-height: 1.5;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      /**
+      color: 
+        values:
+          [color], currentcolor, rgb(), rgba(), #RRGGBB, hsl()
+      **/      
+      color: rgba(0, 168, 69, 0.8);
+    }
+    
+    h1 {
+      font-size: 3em;
+    }
+    
+    h2 {
+      font-size: 2em;
+    }
+
+    em {
+      /**
+      font-style:
+        values:
+          inherit, normal, italic, oblique
+      **/
+      font-style: italic;
+    }
+    
+    p {
+      text-indent: 1em;
+      
+      /**
+      text-transform
+        values:
+          inherit, capitalize, uppercase, lowercase, none (default)
+      **/
+      text-transform: capitalize;
+
+      background-image: url(http://placehold.it/60x20);
+
+      /**
+      background-repeat
+        values:
+          repeat (default), repeat-x, repeat-y, no-repeat
+      **/      
+      background-repeat: repeat-x;
+
+      /**
+      background-position
+        values:
+          top, left, center, bottom, %
+      **/
+      background-position: bottom;
+    }
+    
+    strong {
+      /**
+      text-decoration
+        values:
+          inherit, none, underline, overline, line-through
+      **/
+      text-decoration: underline;
+    }
+
+    p span {
+      background-color: red; 
+    }
+  </style>
+
+</head>
+<body>
+ 
+  <h1>Main title</h1>
+  
+  <p>Lorem ipsum dolor sit amet, causae dissentias pri ad. Ne nec accusata definitiones, mei et voluptua probatus quaestio. At vix sanctus oporteat deseruisse, quaeque menandri te sea. Sale dicant albucius cum et, at sea enim noluisse. Et decore audiam euripidis vim.
+  <strong>This is a very important sentence</strong>
+  </p>
+  
+  <h2>Secondary title</h2>
+  
+  <p>Lorem ipsum dolor sit amet, causae dissentias pri ad. Ne nec accusata definitiones, mei et voluptua probatus quaestio. At vix sanctus oporteat deseruisse, <span>quaeque menandri te sea</span>. Sale dicant albucius cum et, at sea enim noluisse. Et decore audiam euripidis vim.
+  <em>this text should be given some emphasys</em>
+  </p>
+  
+</body>
+</html>

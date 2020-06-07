@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	// Constructor function of a Car
+	function Car() {
+		this.numberOfDoors = 5;
+		this.brand = "Toyota";
+		this.engine = "stopped";
+	}
+
+	// Object creation using the "new" operator on the function call
+	var myNewCar = new Car();
+	var anotherCar = new Car();
+
+	console.log(Car.prototype);
+	console.log(Car.prototype.author);
+	console.log(myNewCar);
+	console.log(anotherCar);
+
+	// new property to Car prototype will appear in object even if added after creation of object
+	Car.prototype.author = "Shiji";
+	Car.prototype.start = function() {
+		this.engine = "started";
+	};
+	Car.prototype.stop = function() {
+		this.engine = "stopped";
+	};
+
+	myNewCar.start();
+
+	console.log(Car.prototype);
+	console.log(Car.prototype.author);
+	console.log(myNewCar);
+	console.log(anotherCar);
+
+</script>
+
+</body>
+</html>

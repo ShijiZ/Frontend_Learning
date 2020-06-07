@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	/* variable content copied by value */
+	var firstName = "John";
+	var referenceToName = firstName;
+
+	console.log("Before change. firstName: " + firstName + ", referenceToName: " + referenceToName);
+
+	// change the value of a variable doesn't affect the other one
+	firstName = "Joe";
+
+	console.log("After change. firstName: " + firstName + ", referenceToName: " + referenceToName);
+
+
+	/* variable content copied by reference */
+	var user = {
+		firstName: "Shiji",
+		lastName: "Zhao"
+	};
+	var referenceToUser = user;
+
+	console.log("Before change. user: ", user, ", referenceToUser: ", referenceToUser);
+
+	// change the value of the object will reflect on both variables
+	user.firstName = "Rui";
+
+	console.log("After change. user: ", user, ", referenceToUser: ", referenceToUser);
+
+
+	function getLastName() {
+		return "lastname";
+	}
+	var referenceToFunction = getLastName;
+
+	console.log("getLastName(): " + getLastName() + ", referenceToFunction(): " + referenceToFunction());
+
+</script>
+
+</body>
+</html>

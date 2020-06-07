@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>id class element attribute selectors</title>
+	<style type="text/css">
+		#homepage-header {
+			background: yellow;
+		}
+
+		.grayed {
+			background: gray;
+		}
+
+		footer {
+			background: red;
+		}
+
+		input[type=text] {
+			background: green;
+		}
+
+		input[type=password] {
+			background: orange;
+		}
+
+		input[type=submit] {
+			background: yellow;
+		}
+	</style>
+</head>
+
+<body>
+<header id="homepage-header">
+	<img src="http://placehold.it/280x80" alt="Company logo">
+	<h1>Company name</h1>
+</header>
+
+<section>
+	<p class="grayed">main content</p>
+
+	<p> Login </p>
+	<form>
+		<input type="text" placeholder="your login"><br>
+		<input type="password" placeholder="your password"></input><br>
+		<br>
+		<input type="submit" value="login">
+	</form>
+</section>
+
+<aside>
+	sidebar
+</aside>
+
+<footer>
+	<div>
+		copyright notice
+	</div>
+</footer>
+</body>
+</html>

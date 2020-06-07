@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	var numericValue = 10;
+	var myObject = {
+		name: "Shiji"
+	};
+
+	var mixedArray = [numericValue, "I'm a string", true, myObject];
+
+	console.log(mixedArray);
+	console.log(mixedArray[0]);
+	console.log(mixedArray[1]);
+	console.log(mixedArray[2]);
+	console.log(mixedArray[3]);
+	console.log(mixedArray.length);
+
+	// Original integer is not modified because it is primitive data type
+	mixedArray[0] = 20;
+	// Original object is modified
+	mixedArray[3].name = "John";
+
+	console.log(numericValue);
+	console.log(myObject);
+
+	/* Array length caveat */
+	var gapArray = [];
+	gapArray[10] = "value at index 10";
+
+	console.log(gapArray);
+	// Note the length is just the index of the last item+1!
+	console.log(gapArray.length);
+
+	/* concatenate 2 arrays */
+	var webCategories = ["Frontend devloper", "Backend devloper", "Fullstack developer"];
+	console.log(webCategories.concat(mixedArray))
+
+	/* look for a value in an array */
+	mixedArray.indexOf(true);
+	mixedArray.indexOf(false);
+
+	/* Add and remove new element to an array */
+	mixedArray.push("another string");
+	console.log(mixedArray);
+	mixedArray.pop(); // remove the last element
+	console.log(mixedArray);
+	mixedArray.shift(); // remove the first element
+	console.log(mixedArray);
+
+	/* implicit iteration */
+	var uppercaseCategories = [];
+	function uppercaseElement(element, index, array) {
+		// It's not necessary to have arguments. 
+		// The first argument will be treated as the value of the element, if there is one
+		// The second argument will be treated as the index of the element, if there is one
+		// The third argument will be treated as the Array object being traversed, if there is one
+		uppercaseCategories.push(element.toUpperCase());
+	}
+	webCategories.forEach(uppercaseElement);
+	console.log(uppercaseCategories);
+
+</script>
+
+</body>
+</html>

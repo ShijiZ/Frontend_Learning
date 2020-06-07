@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	// Constructor function of a Car
+	function Car(numberOfDoors, brand) {
+		this.numberOfDoors = numberOfDoors;
+		this.brand = brand;
+	}
+
+	// Object creation using the "new" operator on the function call
+	var myNewCar = new Car(5, "Toyota");
+	var luxuryCar = new Car(2, "Mercedes");
+	var ludicrousCar = new Car(2, "Ferrari");
+	var batmanCar = new Car(0, "Murcielago");
+
+	console.log(myNewCar);
+	console.log(luxuryCar);
+	console.log(ludicrousCar);
+	console.log(batmanCar);
+
+	// Literal approach
+	var literalCar = {
+		numberOfDoors: 4,
+		brand: "Nissan"
+	};
+
+	console.log(literalCar);
+
+	console.log(myNewCar.constructor);
+	console.log(literalCar.constructor);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+	// firstName is global scoped variable
+	var firstName = "David";
+	
+	function accessGlobalScope() {
+	  firstName = "The name has been changed";
+	}
+	
+	function leakingVariable() {
+	  // notPreviouslyDefinedVar will become global scoped variable
+	  notPreviouslyDefinedVar = "this is my value";
+	}
+
+	function localVariableFunction() {
+	  // lastName is function scoped variable
+	  var lastName;
+	  lastName = "this variable is local";
+	}
+	
+	alert(firstName);
+	accessGlobalScope();
+	alert(firstName);
+
+	leakingVariable();
+	alert(notPreviouslyDefinedVar);
+	
+	localVariableFunction();
+	alert(lastName);
+
+</script>
+
+</body>
+</html>
