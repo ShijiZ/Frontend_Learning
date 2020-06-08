@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Bin</title>
+	<link rel="stylesheet" type="text/css" href="2DomEventHandling.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+<body>
+	<ul id="main-menu" class="menu">
+		<li class="menu-item">
+			<a href="#">Home</a>
+			<div class="menu-item-info">
+				This is the Home menu
+			</div>
+		</li>
+		<li class="menu-item">
+			<a href="#">About us</a>
+			<div class="menu-item-info">
+				This is the About us menu
+			</div>
+		</li>
+		<li class="menu-item">
+			<a href="#">Contact us</a>
+			<div class="menu-item-info">
+				This is the Contact us menu
+			</div>
+		</li>
+
+		<div class="clear-floating"></div>
+	</ul>
+
+	<script>
+		console.log($('a'));
+		console.log($('a').length);
+		console.log($('a')[0]);
+		console.log($('a').get(0));
+
+		// create a new HTMLDivElement
+		console.log('<div></div>');
+	</script>
+</body>
+</html>
